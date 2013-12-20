@@ -22,7 +22,21 @@ $pages_array = $decoded_response['query']['pages'];
 $page_id = key($pages_array);
 
 //Isolate and display content for further manipulation
-echo $decoded_response['query']['pages'][$page_id]['revisions']['0']['*'];
+$content_string = $decoded_response['query']['pages'][$page_id]['revisions']['0']['*'];
+echo $content_string;
+
+?>
+
+<h1>content array</h1>
+
+<?php
+
+//Parse content string on encoded breaks
+$content_array = explode("\n", $content_string);
+
+echo '<pre>';
+print_r($content_array);
+echo '</pre>';
 
 ?>
 

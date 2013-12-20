@@ -1,0 +1,1 @@
+<p>You've successfully signed up. Please log in to continue.</p>

@@ -1,0 +1,127 @@
+/* General styling */
+
+	* {
+	 	font-family: Calibri;
+	}
+
+	h1 {
+	color: orange;
+	padding-left: 40px;
+	}
+
+	h2 {
+		color: orange;
+		padding-left: 40px;
+	}
+
+	h3 {
+		color: orange;
+		padding-left: 40px;
+	}
+
+	p {
+		padding-left: 40px;
+	}
+
+/* Main navigation */
+
+	#menu {
+		background-color: black;
+		height: 50px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	#logo {
+		float: left;
+		font-size: 24px;
+		padding-top: 10px;
+	}
+
+	.menu_link {
+		float: right;
+		padding-left: 20px;
+		padding-top: 15px;
+	}
+
+/* Links */
+
+	a:link {
+		color: white;
+		text-decoration: none;
+	}
+
+	a:visited {
+		color: white;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: white;
+		text-decoration: none;
+	}
+
+	a:active {
+		color: white;
+		text-decoration: none;
+	}
+
+/* Structure for users and posts */
+
+	.group_content {
+		background-color: orange;
+	}
+
+	.follow_link {
+		float: right;
+	}
+
+	.time {
+		float: right;	
+	}
+
+	.post_content {
+		color: white;
+	}
+
+	td {
+		color: black;
+		line-height: 120%;
+		padding: 10px;
+		vertical-align: text-top;
+		width: 400px;
+	}
+
+/* Forms and UI for inputting values */
+
+	form {
+		background-color: orange;
+		padding: 10px;
+		width: 400px;
+	}
+
+	input {
+		font-size: 16px;
+	}
+
+	label {
+		padding: 10px;
+	}
+
+	textarea {
+		font-size: 16px;
+		height: 200px;
+		width: 390px;
+	}
+
+/* Miscellaneous */
+
+	.pic {
+		float: right;
+		padding-right: 200px;
+	}
+
+	.error {
+		color: purple;
+	}
+
