@@ -23,6 +23,21 @@
 		padding-left: 40px;
 	}
 
+	.timespan {
+		height: 50px;
+		/*display: inline-block*/
+		margin-right: 5px;
+		margin-bottom: 5px;
+		margin-top: 5px;
+		background-color: grey;
+		white-space: nowrap;
+		overflow-y: scroll;
+	}
+
+	.description {
+		white-space: normal;
+	}
+
 /* Main navigation */
 
 	#menu {

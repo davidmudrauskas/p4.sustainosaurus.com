@@ -52,5 +52,6 @@
 
 	<?php if(isset($client_files_body)) echo $client_files_body; ?>
 
+<script src="js/app.js"></script>
 </body>
 </html>

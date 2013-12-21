@@ -11,20 +11,24 @@ class timelines_controller extends base_controller {
 
 	public function index() {
 
+		# Set up view
 		$this->template->content = View::instance('v_timelines_index');
-		
 		$this->template->title = "Hello World";
-	
-		# CSS/JS includes
-		/*
-		$client_files_head = Array("");
-    	$this->template->client_files_head = Utils::load_client_files($client_files);
-    	
-    	$client_files_body = Array("");
-    	$this->template->client_files_body = Utils::load_client_files($client_files_body);   
-    	*/
-	      					     		
+
+		# Construct timeline
+    	$q = "SELECT *
+			FROM states WHERE timeline = 'Turkic'";
+			//.$this->user->user_id;
+
+		$state_timespans = DB::instance(DB_NAME)->select_rows($q);
+
+		# Pass profile details to the view
+		$this->template->content->state_timespans = $state_timespans;
+
+		# Render template
 		echo $this->template;
+
+		//$duration = $timespan['end_date'] - $timespan['start_date']
 
 	}
 
