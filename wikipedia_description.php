@@ -1,6 +1,9 @@
 <?php
 // Call Wikipedia API to get info about state
-$url = 'http://en.wikipedia.org/w/api.php?action=parse&page=Turkic_Khaganate&format=json&prop=text&section=0';
+
+$state = $_POST['state_identifier'];
+
+$url = "http://en.wikipedia.org/w/api.php?action=parse&page=".$state."&format=json&prop=text&section=0";
 $ch = curl_init($url);
 curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt ($ch, CURLOPT_USERAGENT, "TestScript"); // required by wikipedia.org server; use YOUR user agent with YOUR contact information. (otherwise your IP might get blocked)

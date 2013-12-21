@@ -5,8 +5,8 @@
 	}
 
 	h1 {
-	color: orange;
-	padding-left: 40px;
+		color: orange;
+		padding-left: 40px;
 	}
 
 	h2 {
@@ -32,11 +32,36 @@
 		background-color: grey;
 		white-space: nowrap;
 		overflow-y: scroll;
+		/*overflow-x: visible;*/
+		/*position: relative;*/
 	}
 
 	.description {
 		white-space: normal;
 	}
+
+	.center {
+		text-align:center;
+	}
+
+	.timeline_option {		
+		font-size: 24px;
+		width: 100px;
+		display: inline-block;
+	}
+
+	#turkic_text {
+		color: blue;
+	}
+
+	#iranian_text {
+		color: green;
+	}
+
+	#chinese_text {
+		color: red;
+	}
+
 
 /* Main navigation */
 

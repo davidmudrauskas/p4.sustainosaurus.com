@@ -21,8 +21,8 @@
 		</div>
 
 		<!-- Menu for users who are logged in -->
-		<?php if($user): ?>
-		<div class="menu_link">
+		<?php //if($user): ?>
+<!-- 		<div class="menu_link">
 			<a href='/users/logout'>Log out</a>
 		</div>
 		
@@ -32,19 +32,27 @@
 		
 		<div class="menu_link">
 			<a href='/posts/users'>All users</a>
-		</div>
+		</div> -->
 
 		<!-- Menu options for users who are not logged in -->
-		<?php else: ?>
-		<div class="menu_link">
+		<//?php else: ?>
+<!-- 		<div class="menu_link">
 			<a href='/users/signup'>Sign up</a>
 		</div>
 
 		<div class="menu_link">
 			<a href='/users/login'>Log in</a>
+		</div> -->
+
+		<?php //endif; ?>
+
+		<div class="menu_link">
+			<a href='/about'>About</a>
 		</div>
 
-		<?php endif; ?>
+		<div class="menu_link">
+			<a href='/about'>Contact</a>
+		</div>
 
 	</div><br>
 	

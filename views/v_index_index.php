@@ -1,11 +1,9 @@
-<p>
-	Hello World! You have successfully spawned a new application.
-</p>
+<h1>Trace the history of Central Asia through timelines</h1>
 
-<p>
-	This message is being triggered via the c_index.php controller, within the index() method.
-</p>
+<p>Select a timeline to get started.</p>
 
-<p>
-	<strong>Since everything is in working order, you should now delete <?php echo APP_PATH?>diagnostics.php</strong>
-</p>
+<div class="center">
+	<div class="timeline_option"><a id="turkic_text" href='/timelines/turkic'>Turkic</a></div>
+	<div class="timeline_option"><a id="iranian_text" href='/timelines/iranian'>Iranian</a></div>
+	<div class="timeline_option"><a id="chinese_text" href='/timelines/chinese'>Chinese</a></div>
+</div>
