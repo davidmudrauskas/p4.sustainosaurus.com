@@ -5,7 +5,6 @@
 	}
 
 	h1 {
-		color: orange;
 		padding-left: 40px;
 	}
 
@@ -23,44 +22,136 @@
 		padding-left: 40px;
 	}
 
-	.timespan {
-		height: 50px;
-		/*display: inline-block*/
-		margin-right: 5px;
-		margin-bottom: 5px;
-		margin-top: 5px;
-		background-color: grey;
-		white-space: nowrap;
-		overflow-y: scroll;
-		/*overflow-x: visible;*/
-		/*position: relative;*/
-	}
+/*	body {
+		margin: 0px;
+		padding: opx;	
+	} Matthew had used this to keep the menu bar from scrolling with the content
+
+	html {
+		margin: 0px;
+		padding: opx;		
+	}*/
 
 	.description {
 		white-space: normal;
+		background-color: #FBF8EF;
+		padding: 10px;
+		width: 300px;
+		height: 300px;
+		display: none;
+		overflow-y: scroll;
+		border: solid;
+		border-width: 1px;
+		line-height: 150%;
 	}
 
 	.center {
 		text-align:center;
 	}
 
-	.timeline_option {		
+	/*.timeline_option {		
+		font-size: 24px;
+		width: 100px;
+		display: inline-block;
+	}*/
+
+/* Timeline titles styling */
+
+	#turkic_title {
+		color: blue;
+		background-color: #99CCFF;
+		font-size: 20px;
+		width: 100px;
+		display: inline-block;
+	}
+
+	#iranian_title {
+		color: green;
+		background-color: #669999;
 		font-size: 24px;
 		width: 100px;
 		display: inline-block;
 	}
 
-	#turkic_text {
-		color: blue;
-	}
-
-	#iranian_text {
-		color: green;
-	}
-
-	#chinese_text {
+	#chinese_title {
 		color: red;
+		background-color: #FF9999;
+		font-size: 20px;
+		width: 100px;
+		display: inline-block;
 	}
+
+
+/* Timeline state names styling */
+
+	.duration {
+		/*height: 50px;*/
+		/*margin-top: 40px;*/
+		/*display: inline-block*/
+		/*margin-right: 5px;*/
+		/*vertical-align: middle;*/
+		/*white-space: normal;*/
+		/*overflow-x: visible;*/
+		/*position: relative;*/
+	}
+
+	.turkic_text {
+		color: #084B8A;
+		font-size: 20px;
+		white-space: nowrap;
+	}
+
+	.iranian_text {
+		color: #0B3B0B;
+		font-size: 20px;
+		white-space: nowrap;
+	}
+
+	.chinese_text {
+		color: #B40404;
+		font-size: 20px;
+		white-space: nowrap;
+	}
+
+	.turkic_background {
+		padding: 10px;
+		background-color: #A9E2F3;
+		margin-top: 5px;
+		white-space: nowrap;
+		font-size: 18px;
+		color: #585858;
+	}
+
+	.iranian_background {
+		padding: 10px;
+		background-color: #A9F5A9;
+		margin-top: 5px;
+		white-space: nowrap;
+		font-size: 18px;
+		color: #585858;
+	}
+
+	.chinese_background {
+		padding: 10px;
+		background-color: #F5A9A9;
+		margin-top: 5px;
+		white-space: nowrap;
+		font-size: 18px;
+		color: #585858;
+	}
+
+
+	.expand {
+		/*margin-left: 20px;*/
+	}
+
+	.collapse {
+		display: none;
+	}
+
+/*	.wrapper {
+		margin: 200px;
+	}*/
 
 
 /* Main navigation */
@@ -70,6 +161,8 @@
 		height: 50px;
 		padding-left: 20px;
 		padding-right: 20px;
+		/*position: fixed;*/
+		/*width: 100%;*/
 	}
 
 	#logo {
