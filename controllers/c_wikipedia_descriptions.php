@@ -1,5 +1,4 @@
 <?php
-// Call Wikipedia API to get info about state
 
 $css_id = $_POST['state_identifier'];
 
