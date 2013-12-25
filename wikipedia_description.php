@@ -5,7 +5,7 @@ $css_id = $_POST['state_identifier'];
 
 //echo $css_id;
 
-$mysqli = new mysqli("127.0.0.1", "root", "", "sustaino_p4_sustainosaurus_com", 3306);
+$mysqli = new mysqli("127.0.0.1", "sustaino_p4", "RM-WWe@uQO$U", "sustaino_p4_sustainosaurus_com", 3306);
 if ($mysqli->connect_errno) {
     echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
 }
