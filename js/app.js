@@ -1,4 +1,3 @@
-
 $(".timespan").click(function(event) {
 
     var state = $(this).attr("id");
