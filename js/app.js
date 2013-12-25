@@ -6,7 +6,7 @@ $(".timespan").click(function(event) {
 
     $.ajax({
             type: "POST",
-            url: "/controllers/c_wikipedia_descriptions.php",
+            url: "/wikipedia_descriptions",
             data: { "state_identifier" : state },
             success: function(text) { 
 
