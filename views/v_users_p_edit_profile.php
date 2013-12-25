@@ -1,1 +1,0 @@
-<p>Profile successfully updated.</p>

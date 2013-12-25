@@ -13,12 +13,11 @@ class timelines_controller extends base_controller {
 
 		# Set up view
 		$this->template->content = View::instance('v_timelines_index');
-		$this->template->title = "Hello World";
+		$this->template->title = "Tracing the Past -- ".ucfirst($timeline_option);
 
 		# Construct timeline
     	$q = "SELECT *
 			FROM states WHERE timeline = '".$timeline_option."'";
-			//.$this->user->user_id;
 
 		$state_timespans = DB::instance(DB_NAME)->select_rows($q);
 
@@ -29,7 +28,9 @@ class timelines_controller extends base_controller {
 		# Render template
 		echo $this->template;
 
-		//$duration = $timespan['end_date'] - $timespan['start_date']
+		#Steps for view's foreach loop
+		$first_start_year = $state_timespans[0]['start_year'];
+		$counter = 0;
 
 	}
 

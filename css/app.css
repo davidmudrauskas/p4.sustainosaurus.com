@@ -22,16 +22,6 @@
 		padding-left: 40px;
 	}
 
-/*	body {
-		margin: 0px;
-		padding: opx;	
-	} Matthew had used this to keep the menu bar from scrolling with the content
-
-	html {
-		margin: 0px;
-		padding: opx;		
-	}*/
-
 	.description {
 		white-space: normal;
 		background-color: #FBF8EF;
@@ -49,51 +39,34 @@
 		text-align:center;
 	}
 
-	/*.timeline_option {		
-		font-size: 24px;
-		width: 100px;
-		display: inline-block;
-	}*/
-
 /* Timeline titles styling */
 
 	#turkic_title {
-		color: blue;
-		background-color: #99CCFF;
-		font-size: 20px;
-		width: 100px;
+		color: #084B8A;
+		font-size: 36px;
+		font-weight: bold;
+		width: 150px;
 		display: inline-block;
 	}
 
 	#iranian_title {
-		color: green;
-		background-color: #669999;
-		font-size: 24px;
-		width: 100px;
+		color: #0B3B0B;
+		font-size: 36px;
+		font-weight: bold;
+		width: 150px;
 		display: inline-block;
 	}
 
 	#chinese_title {
-		color: red;
-		background-color: #FF9999;
-		font-size: 20px;
-		width: 100px;
+		color: #B40404;
+		font-size: 36px;
+		font-weight: bold;
+		width: 150px;
 		display: inline-block;
 	}
 
 
 /* Timeline state names styling */
-
-	.duration {
-		/*height: 50px;*/
-		/*margin-top: 40px;*/
-		/*display: inline-block*/
-		/*margin-right: 5px;*/
-		/*vertical-align: middle;*/
-		/*white-space: normal;*/
-		/*overflow-x: visible;*/
-		/*position: relative;*/
-	}
 
 	.turkic_text {
 		color: #084B8A;
@@ -140,20 +113,6 @@
 		color: #585858;
 	}
 
-
-	.expand {
-		/*margin-left: 20px;*/
-	}
-
-	.collapse {
-		display: none;
-	}
-
-/*	.wrapper {
-		margin: 200px;
-	}*/
-
-
 /* Main navigation */
 
 	#menu {
@@ -161,8 +120,12 @@
 		height: 50px;
 		padding-left: 20px;
 		padding-right: 20px;
-		/*position: fixed;*/
-		/*width: 100%;*/
+		position: fixed;
+		width: 100%;
+	}
+
+	.intro {
+		font-size: 18px;
 	}
 
 	#logo {

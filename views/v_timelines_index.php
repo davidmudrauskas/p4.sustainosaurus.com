@@ -1,16 +1,9 @@
-
-<!-- <div style="background-color: pink; height: 200px; width: 400px;">
-	<div style="background-color: blue; height: 100px; width: 500px; float:left">>
-
-	</div>
-</div> -->
-
-<?php 
-	$first_start_year = $state_timespans[0]['start_year'];
-	$counter = 0;
+<?php
 
 	foreach($state_timespans as $timespan): 
+		
 		$duration = abs($timespan['end_year'] - $timespan['start_year']);
+
 		if($counter == 0) {
 			$margin_left = 0;
 		}
@@ -25,7 +18,7 @@
 
 <div class="timeline_offset" style="margin-left: <?=$margin_left?>px;">
 
-	<div class="timespan" id="<?=$timespan['state']?>" style="width: <?=$duration?>px;">
+	<div class="timespan" id="<?=$timespan['css_id']?>" style="width: <?=$duration?>px;">
 
 		<div class="duration" style="width: <?=$duration?>px;">
 		
@@ -37,23 +30,16 @@
 					<?=$timespan['display_name']?>
 				</div>
 
-				<!-- <img class="expand" src="/images/expand.png" alt="expand">
-				<img class="collapse" src="/images/collapse.png" alt="collapse"> -->
-
 				<?=abs($timespan['start_year'])?>-<?=abs($timespan['end_year'])?> <?=$timespan['end_year_type']?>
 
 			</div>
 
 		</div>
 		
-		<div class="description" id="<?=$timespan['state']?>_description"></div>
+		<div class="description" id="<?=$timespan['css_id']?>_description"></div>
 
 	</div>
 
 </div>
 
-<script> var state = <?=$timespan['state']?>; </script>
 <?php endforeach; ?>
-
-</br>
-</br>

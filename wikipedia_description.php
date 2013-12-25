@@ -1,7 +1,30 @@
 <?php
 // Call Wikipedia API to get info about state
 
-$state = $_POST['state_identifier'];
+$css_id = $_POST['state_identifier'];
+
+//echo $css_id;
+
+$mysqli = new mysqli("127.0.0.1", "root", "", "sustaino_p4_sustainosaurus_com", 3306);
+if ($mysqli->connect_errno) {
+    echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
+}
+
+//echo $mysqli->host_info . "\n";
+
+$result = $mysqli->query("SELECT * FROM sustaino_p4_sustainosaurus_com.states WHERE css_id ='".$css_id."'");
+if ($result == FALSE) {
+    echo "Uh oh something went wrong";
+}
+
+$row = $result->fetch_array();
+//print_r($row);
+
+$description_location = $row['description_location'];
+$state = $row['state'];
+
+//echo $description_location;
+//echo $state;
 
 $url = "http://en.wikipedia.org/w/api.php?action=parse&page=".$state."&format=json&prop=text&section=0";
 $ch = curl_init($url);
@@ -17,5 +40,5 @@ $content = $json->{'parse'}->{'text'}->{'*'}; // get the main text content of th
 $pattern = '#<p>(.*)</p>#Us'; // http://www.phpbuilder.com/board/showthread.php?t=10352690
 if(preg_match_all($pattern, $content, $matches))
 {
-    print strip_tags($matches[0][1]); // Content of the first paragraph without the HTML tags.
+    print strip_tags($matches[0][$description_location]); // Content of the first paragraph without the HTML tags.
 }

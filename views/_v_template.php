@@ -21,15 +21,10 @@
 			<a href='/'><?=APP_NAME?></a>
 		</div>
 
-		<div class="menu_link">
-			<a href='/about'>About</a>
-		</div>
-
-		<div class="menu_link">
-			<a href='/about'>Contact</a>
-		</div>
-
-	</div><br>
+	</div>
+	<br>
+	<br>
+	<br>
 	
 	<?php if(isset($content)) echo $content; ?>
 

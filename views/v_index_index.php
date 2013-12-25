@@ -1,6 +1,8 @@
 <h1>Trace the history of Central Asia through timelines</h1>
 
-<p>Select a timeline to get started.</p>
+<p class="intro">Click on one of the options beow to get started. Then click a period to learn more about it.</p>
+
+<br>
 
 <div class="center">
 	<a id="turkic_title" href='/timelines/index/turkic'>Turkic</a>
