@@ -9,6 +9,7 @@ To accomplish that, I focused on several technical aspects. The interactive comp
   - Multiple interactive timelines
   - Expandable/collapsible descriptions
   - Dynamic descriptions, reflecting changes on Wikipedia
+  - Links out to full article on Wikipedia
 
 ** What aspects of your application are being managed by JavaScript **
 

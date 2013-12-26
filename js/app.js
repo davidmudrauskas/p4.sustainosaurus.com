@@ -3,6 +3,7 @@ $(".timespan").click(function(event) {
 	var state = $(this).attr("id");
 
 	$("#"+state+"_description").slideToggle("slow");
+	$("#"+state+"_wikipedia_link").toggle();
 
 	$.ajax({
 			type: "POST",

@@ -34,12 +34,12 @@
 			</div>
 
 		</div>
-		
-		
+
 		<div class="description" id="<?=$timespan['css_id']?>_description"></div>
 
-
 	</div>
+
+	<a class="wikipedia_link" id="<?=$timespan['css_id']?>_wikipedia_link" target="_blank" href="http://en.wikipedia.org/wiki/<?=$timespan['state']?>">More from Wikipedia</a>
 
 </div>
 
