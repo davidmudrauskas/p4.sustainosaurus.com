@@ -8,16 +8,6 @@
 		padding-left: 40px;
 	}
 
-	h2 {
-		color: orange;
-		padding-left: 40px;
-	}
-
-	h3 {
-		color: orange;
-		padding-left: 40px;
-	}
-
 	p {
 		padding-left: 40px;
 	}
@@ -39,7 +29,7 @@
 		text-align:center;
 	}
 
-/* Timeline titles styling */
+/* Timeline styling */
 
 	#turkic_title {
 		color: #084B8A;
@@ -64,9 +54,6 @@
 		width: 150px;
 		display: inline-block;
 	}
-
-
-/* Timeline state names styling */
 
 	.turkic_text {
 		color: #084B8A;
@@ -161,63 +148,4 @@
 		color: white;
 		text-decoration: none;
 	}
-
-/* Structure for users and posts */
-
-	.group_content {
-		background-color: orange;
-	}
-
-	.follow_link {
-		float: right;
-	}
-
-	.time {
-		float: right;	
-	}
-
-	.post_content {
-		color: white;
-	}
-
-	td {
-		color: black;
-		line-height: 120%;
-		padding: 10px;
-		vertical-align: text-top;
-		width: 400px;
-	}
-
-/* Forms and UI for inputting values */
-
-	form {
-		background-color: orange;
-		padding: 10px;
-		width: 400px;
-	}
-
-	input {
-		font-size: 16px;
-	}
-
-	label {
-		padding: 10px;
-	}
-
-	textarea {
-		font-size: 16px;
-		height: 200px;
-		width: 390px;
-	}
-
-/* Miscellaneous */
-
-	.pic {
-		float: right;
-		padding-right: 200px;
-	}
-
-	.error {
-		color: purple;
-	}
-
+	

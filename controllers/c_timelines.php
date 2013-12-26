@@ -16,7 +16,7 @@ class timelines_controller extends base_controller {
 		$this->template->title = "Tracing the Past -- ".ucfirst($timeline_option);
 
 		# Construct timeline
-    	$q = "SELECT *
+		$q = "SELECT *
 			FROM states WHERE timeline = '".$timeline_option."'";
 
 		$state_timespans = DB::instance(DB_NAME)->select_rows($q);

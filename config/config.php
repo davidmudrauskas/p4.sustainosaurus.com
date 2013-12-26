@@ -14,7 +14,7 @@ If you want a different default time format for this app, set it below
 */
 
 # What is the name of this app?
-	define('APP_NAME', 'Tracing the Past');  
+	define('APP_NAME', 'Tracing the Past');
 
 # When email is sent out from the server, where should it come from?
 # Ideally, this should match the domain name
@@ -22,11 +22,11 @@ If you want a different default time format for this app, set it below
 
 /* 
 A email designated to receive messages from the server. Examples:
- 	* When there's a MySQL error on the live server it will send it to this email
- 	* If you're BCCing yourself on outgoing emails you may want them to go there
- 	* Logs, cron results, errors, etc.
- 	
- 	Some might want this to be the same as the APP_EMAIL, others might want to create a designated gmail address for it
+	* When there's a MySQL error on the live server it will send it to this email
+	* If you're BCCing yourself on outgoing emails you may want them to go there
+	* Logs, cron results, errors, etc.
+	
+	Some might want this to be the same as the APP_EMAIL, others might want to create a designated gmail address for it
 */ 	
 	define('SYSTEM_EMAIL', 'david.mudrauskas@gmail.com'); 
 

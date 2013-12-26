@@ -20,9 +20,8 @@
 
 	<div class="timespan" id="<?=$timespan['css_id']?>" style="width: <?=$duration?>px;">
 
-		<div class="duration" style="width: <?=$duration?>px;">
 		
-			<!-- <div style="position: absolute; overflow-x: visible;"> -->
+		<div class="duration" style="width: <?=$duration?>px;">
 
 			<div class="<?=$timeline_option?>_background">
 				
@@ -36,7 +35,9 @@
 
 		</div>
 		
+		
 		<div class="description" id="<?=$timespan['css_id']?>_description"></div>
+
 
 	</div>
 

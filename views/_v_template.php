@@ -14,7 +14,7 @@
 	
 </head>
 
-<body>	
+<body>
 	<div id='menu'>
 		<div id="logo">
 			<a href='/'><?=APP_NAME?></a>
